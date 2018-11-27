@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <!--script type="text/javascript">
+        //$("#form_1").onsubmit(function() {
+        function search_a_user() {
+            //$("btn_search_user").click(function() {
+            $.ajax({
+                url: '/users',
+                type: 'GET',
+                dataType: 'html',
+                data: {
+                    id: $("#user_id").text()
+                }
+            }).done(function (ketqua) {
+                alert("Data: " + data + "\nStatus: " + status);
+            });
+        };
+        //});
+    </script-->
+
+</head>
+<body>
+    <h2>Search an user</h2>
+
+    <!--form id="form_1"-->
+    ID:
+    <br>
+    <input id="user_id" type="text" name="id">
+    <br>
+    <button id="btn1">Search</button>
+            <!--
+            /*
+            $.ajax({
+                url: 'http://localhost:5000/users',
+                type: 'GET',
+                dataType: 'html',
+                data: {
+                    id: $('#user_id').val()
+                }
+            }).done(function (data) {
+                alert('Data: ' + data + '\nStatus: ' + status);
+            });
+            */
+            -->
+        <!--input id="btn_search_user" type="submit" value="Search"-->
+    <!--/form-->
+
+    <!--script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"/-->
+    <!--script>
+        $('#btn1').click(function(){
+            //alert($('#user_id').val());
+            $.ajax({
+                url: 'http://localhost:5000/users',
+                type: 'GET',
+                dataType: 'html',
+                data: {
+                    id: $('#user_id').val()
+                }
+            })
+            .done(function (data, status) {
+                alert('Data: ' + data + '\nStatus: ' + status);
+            })
+            .fail(function(data, status) {
+                alert(data + ' ' + status);
+            });
+        });
+    </script-->
+    <script src="../static/script.js"></script>
+</body>
+</html>

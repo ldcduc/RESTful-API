@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+    <link rel="stylesheet" href="../static/styles.css">
+
+</head>
+<body>
+    <div class="menu">
+        <h1>Menu</h1>
+    </div>
+
+    <h5 class="menu_btn" id="click_search">Search a course</h5>
+    <div class="search">
+        <h2>Search a course</h2>
+        Course ID:
+        <br>
+        <input id="course_id" type="text" name="id">
+        <br>
+        <button class="btn">Search</button>
+    </div>
+
+    <h5 class="menu_btn" id="click_add">Add a new course</h5>
+    <div class="add">
+        <h2>Add a new course</h2>
+        <br>
+        Course ID:
+        <input id="course_id" type="text" name="id">
+        <br>
+        Course name:
+        <input id="course_name" type="text" name="name">
+        <br>
+        Course capacity:
+        <input id="course_capacity" type="number" name="capacity">
+        <br>
+        <button class="btn">Add course</button>
+    </div>
+
+    <h5 class="menu_btn" id="click_edit">Modify a course</h5>
+    <div class="edit">
+        <h2>Edit a course</h2>
+        <br>
+        Course ID:
+        <input id="course_id" type="text" name="id">
+        <br>
+        Course name:
+        <input id="course_name" type="text" name="name">
+        <br>
+        Course capacity:
+        <input id="course_capacity" type="number" name="capacity">
+        <br>
+        <button class="btn">Edit course</button>
+    </div>
+
+    <h5 class="menu_btn" id="click_remove">Remove a course</h5>
+    <div class="remove">
+        <h2>Remove a course</h2>
+        Course ID:
+        <br>
+        <input id="course_id" type="text" name="id">
+        <br>
+        <button class="btn">Remove course</button>
+    </div>
+    <script src="../static/course_script.js"></script>
+</body>
+</html>
